@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR Dashboard</title>
+
+    <!-- ✅ Correct CSS file -->
+    <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+
+<nav class="nav">
+    <h2>HR Portal</h2>
+
+    <div class="nav-controls">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by name/email..."
+            class="search-input"
+        />
+
+        <select id="filterStatus" class="filter-select">
+            <option value="">All Status</option>
+            <option value="Applied">Applied</option>
+            <option value="Selected">Selected</option>
+            <option value="Hold">Hold</option>
+            <option value="Rejected">Rejected</option>
+        </select>
+    </div>
+</nav>
+
+<main class="main">
+    <div class="table-container">
+        <table class="table">
+            <thead class="table-header">
+                <tr>
+                    <th>Candidate</th>
+                    <th>Contact</th>
+                    <th>Position</th>
+                    <th>Status</th>
+                    <th>Resume</th>
+                </tr>
+            </thead>
+
+            <tbody id="candidateTableBody"></tbody>
+        </table>
+    </div>
+</main>
+
+<!-- ✅ Correct JS file -->
+<script src="dashboard.js"></script>
+</body>
+</html>
